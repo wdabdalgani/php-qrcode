@@ -288,7 +288,7 @@ class QRCode{
 	}
 
 	/**
-	 * Reads a QR Code from the given luminance source
+	 * Reads a QRCode from the given luminance source
 	 */
 	public function readFromSource(LuminanceSourceInterface $source):DecoderResult{
 		return (new Decoder($this->options))->decode($source);
